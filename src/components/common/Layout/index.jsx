@@ -1,14 +1,17 @@
 import React from 'react';
-import './layout.css';
 import './styles.css';
 
+import { Header } from '../../theme';
 import { Wrapper } from './styles';
 
 const Layout = ({ children }) => {
   return (
-    <Wrapper>
-      children
-    </Wrapper>
+    <>
+      <Header />
+      <Wrapper>
+        { children }
+      </Wrapper>
+    </>
   )
 }
 
