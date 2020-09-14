@@ -17,7 +17,6 @@
     "gatsby": "^2.24.54",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
     "react-system-grid": "^1.2.0",
     "styled-components": "^5.2.0"
   },
