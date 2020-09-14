@@ -1,5 +1,4 @@
 import React from 'react';
-import './fonts.css';
 import './styles.css';
 
 import { Provider } from '../../providers/Provider';
