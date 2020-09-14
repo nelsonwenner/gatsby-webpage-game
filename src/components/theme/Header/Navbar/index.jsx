@@ -1,32 +1,19 @@
-import React,{ useState } from 'react';
+import React from 'react';
 import { Link } from 'gatsby';
 
 import Logo from '../../../../assets/logo.svg';
 import { Container } from 'react-system-grid';
-import Hamburger from '../Hamburger';
-import { Wrapper, Nav, LogoIcon } from './styles';
+import { Wrapper, Brand } from './styles';
+import NavbarLinks from '../NavbarLinks';
 
-const Navbar = () => {
-  const [click, setClick] = useState(false);
-
-  const handlerClick = () => setClick(!click);
-  
+const Navbar = () => {  
   return (
-    <Wrapper>
-      <Container>
-        <Nav>
-          <Link to="/">
-            <LogoIcon>
-              <img src={ Logo } alt="logo"></img>
-            </LogoIcon>
-          </Link>
-          <Hamburger 
-            isClicked={ click } 
-            onClick={ handlerClick }
-          />
-        </Nav> 
-      </Container>
-    </Wrapper>
+    <Wrapper as={ Container }>
+      <Brand as={ Link } to="/" >
+        <img src={ Logo } alt="logo"/>
+      </Brand>
+      <NavbarLinks />
+    </Wrapper> 
   )
 }
 

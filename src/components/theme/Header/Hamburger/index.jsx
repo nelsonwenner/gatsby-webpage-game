@@ -1,11 +1,15 @@
 import React from 'react';
 import './styles.css';
 
-const Hamburger = ({ isClicked, onClick }) => {
+import { useProvider } from '../../../providers/Provider';
+
+const Hamburger = () => {
+  const { toggleSidebar, handlerClick } = useProvider();
+
   return (
     <div 
-      className={`hamburger ${ (isClicked && 'motion') }`}
-      onClick={ onClick }
+      className={`hamburger ${ (toggleSidebar && 'motion') }`}
+      onClick={ handlerClick }
     /> 
   )
 }
