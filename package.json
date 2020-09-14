@@ -15,14 +15,11 @@
   },
   "dependencies": {
     "gatsby": "^2.24.54",
-    "gatsby-source-graphql": "^2.7.3",
-    "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-helmet": "^6.1.0",
     "react-system-grid": "^1.2.0",
-    "styled-components": "^5.2.0",
-    "styled-system": "^5.1.5"
+    "styled-components": "^5.2.0"
   },
   "devDependencies": {
     "prettier": "2.1.1"
