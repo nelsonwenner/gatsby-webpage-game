@@ -17,7 +17,7 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: #2B2C33;
+    background: rgb(16, 16, 16);
   }
 `
 
