@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const Wrapper = styled.div`
   width: 100%;
   padding: 12rem 0;
-  background: #2B2C33;
+  background: #181818;
 `
 
 export const TextWrapper = styled.div`
@@ -61,7 +61,7 @@ export const Description = styled.p`
 export const ImgWrapper = styled.div`
   position: relative;
   max-width: 70rem;
-  height: 66rem;
+  height: 74rem;
   width: 100%;
   display: flex;
   flex-direction: row;
