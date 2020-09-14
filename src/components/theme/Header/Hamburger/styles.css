@@ -1,7 +1,6 @@
 .hamburger {
-  position: absolute;
-  top: 1rem;
-  right: 2.5rem;
+  position: relative;
+  left: 0.8rem;
   z-index: 999;
   width: 5.4rem;
   height: 5rem;
@@ -51,6 +50,14 @@
 }
 
 /*Media query*/
+@media only screen and (max-width:960px) { 
+   
+  .hamburger {
+    display: block;
+  }
+
+}
+
 @media only screen and (max-width:960px) { 
    
   .hamburger {
