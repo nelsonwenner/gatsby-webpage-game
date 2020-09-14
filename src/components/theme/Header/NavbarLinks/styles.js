@@ -13,7 +13,7 @@ export const NavMenu = styled.ul`
     width: 100%;
     height: 90vh;
     position: absolute;
-    top: 7rem;
+    top: 8rem;
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
@@ -22,7 +22,7 @@ export const NavMenu = styled.ul`
 `
 
 export const NavItem = styled.li`
-  height: 7rem;
+  height: 8rem;
   border-bottom: 2px solid transparent;
 
   &:hover {
@@ -44,14 +44,15 @@ export const NavLinks = styled(Link)`
   flex-direction: row;
   align-items: center;
   padding: 0.2rem 1rem;
-  color: #fff;
+  color: #f2f2f2;
   font-size: 1.8rem;
 
   @media only screen and (max-width:960px) { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     text-align: center;
     padding: 2rem;
-    width: 100%;
-    display: table;
 
     &:hover {
       color: #FFC149;
