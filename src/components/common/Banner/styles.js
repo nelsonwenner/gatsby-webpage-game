@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
-  padding: 12rem 0;
+  height: 100vh;
+  min-height: 50rem;
+  padding: 20rem 0;
   background: #181818;
+
+  display: flex;
+  flex-direction: row;
 `
 
 export const TextWrapper = styled.div`
   max-width: 54rem;
-  padding-top: 0;
-  padding-bottom: 6rem;
+  width: 100%;
 
   @media screen and (max-width: 768px) {
-    padding-bottom: 6.5rem;
     text-align: center;
   }
 `;
@@ -59,21 +62,18 @@ export const Description = styled.p`
 `;
 
 export const ImgWrapper = styled.div`
-  position: relative;
-  max-width: 70rem;
-  height: 74rem;
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 
   @media screen and (max-width: 768px) {
-    width: 75%;
+    width: 60%;
   }
 
   @media screen and (max-width: 375px) {
     width: 90%;
-    height: 26rem;
   }
 `;
 
@@ -81,11 +81,4 @@ export const Logo = styled.img`
   width: 100%;
   display: inline-block;
   vertical-align: middle;
-  padding-right: 0;
-  border: 0;
-
-  @media screen and (max-width: 768px) {
-    position: absolute;
-    top: 0;
-  }
 `;

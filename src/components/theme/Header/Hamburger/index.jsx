@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-import { useProvider } from '../../../providers/Provider';
+import { useProvider } from '../../../../providers/Provider';
 
 const Hamburger = () => {
   const { toggleSidebar, handlerClick } = useProvider();

@@ -29,11 +29,11 @@ const Banner = () => {
                 Artificial Society
               </Subtitle>
               <Description>
-              The human being was destroyed himself with his
-              desire for destructive conquests. But this world
-              must last, artificial society must fall and the new
-              characteristic of humanity must be hope and the
-              struggle for good.
+                The human being was destroyed himself with his
+                desire for destructive conquests. But this world
+                must last, artificial society must fall and the new
+                characteristic of humanity must be hope and the
+                struggle for good.
               </Description>
             </TextWrapper>
           </Column>

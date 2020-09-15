@@ -1,12 +1,12 @@
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 import styled from 'styled-components';
-import { Link } from 'gatsby';
 
 export const NavMenu = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
-
+  
   @media only screen and (max-width:960px) { 
     display: flex;
     flex-direction: column;
@@ -17,12 +17,12 @@ export const NavMenu = styled.ul`
     left: ${({ click }) => (click ? 0 : '-100%')};
     opacity: 1;
     transition: all 0.5s ease;
-    background: rgb(16, 16, 16);
+    background: #181818;
   }
 `
 
 export const NavItem = styled.li`
-  height: 8rem;
+  height: 7rem;
   border-bottom: 2px solid transparent;
 
   &:hover {
@@ -38,7 +38,7 @@ export const NavItem = styled.li`
   }
 `
 
-export const NavLinks = styled(Link)`
+export const NavLinks = styled(AnchorLink)`
   height: 100%;
   display: flex;
   flex-direction: row;
