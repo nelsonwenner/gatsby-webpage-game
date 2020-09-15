@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { useProvider } from '../../../providers/Provider';
+import { useProvider } from '../../../../providers/Provider';
 import { NavMenu, NavItem, NavLinks } from './styles';
 
 const NavbarLinks = () => {
@@ -9,22 +9,22 @@ const NavbarLinks = () => {
   return (  
     <NavMenu click={ toggleSidebar }>
       <NavItem>
-        <NavLinks to="/">
+        <NavLinks href="#home">
           Home
         </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="/about">
+        <NavLinks href="#about">
           About
         </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="/team">
+        <NavLinks href="#team">
           Team
         </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks to="/contact">
+        <NavLinks href="#contact">
           Contact
         </NavLinks>
       </NavItem>

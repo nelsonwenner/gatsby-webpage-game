@@ -24,6 +24,7 @@
     "gatsby-plugin-styled-components": "^3.0.4",
     "gatsby-source-filesystem": "^2.1.35",
     "react": "^16.12.0",
+    "react-anchor-link-smooth-scroll": "^1.0.12",
     "react-dom": "^16.12.0",
     "react-helmet": "^5.2.0",
     "react-system-grid": "^1.2.0",
