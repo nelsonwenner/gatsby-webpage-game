@@ -15,8 +15,17 @@
   },
   "dependencies": {
     "gatsby": "^2.24.54",
+    "gatsby-plugin-canonical-urls": "^2.0.8",
+    "gatsby-plugin-favicon": "^3.1.6",
+    "gatsby-plugin-manifest": "2.2.6",
+    "gatsby-plugin-offline": "3.0.14",
+    "gatsby-plugin-react-helmet": "^3.0.2",
+    "gatsby-plugin-sitemap": "^2.0.3",
+    "gatsby-plugin-styled-components": "^3.0.4",
+    "gatsby-source-filesystem": "^2.1.35",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.0",
     "react-system-grid": "^1.2.0",
     "styled-components": "^5.2.0"
   },
