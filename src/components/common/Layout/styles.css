@@ -36,3 +36,14 @@ select:focus,
 textarea:focus {
   outline: none;
 }
+
+/*Effects*/
+.effect-entry-left { 
+  opacity: 0;
+  transform: translateX(-60rem);
+}
+
+.effect-entry-right {
+  opacity: 0;
+  transform: translateX(120rem);
+}
