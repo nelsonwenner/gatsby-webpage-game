@@ -10,6 +10,7 @@ import {
   Logo 
 } from './styles';
 
+import logoPerson from '../../../assets/logo-person.svg';
 import logo from '../../../assets/logo-banner.svg';
 import { Container } from 'react-system-grid';
 import { Column } from '../Column';
@@ -38,8 +39,8 @@ const Banner = () => {
             </TextWrapper>
           </Column>
           <Column>
-            <ImgWrapper start='true' className='anime-right'>
-              <Logo src={ logo } alt="logo"/>
+            <ImgWrapper start='true' className='anime-up'>
+              <Logo src={ logoPerson } alt="logo"/>
             </ImgWrapper>
           </Column>
         </Row>

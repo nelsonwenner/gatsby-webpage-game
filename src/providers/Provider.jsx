@@ -10,10 +10,10 @@ export const Provider = ({ children }) => {
   
   useEffect(() => {
     const animeLeft = document.querySelector('.anime-left');
-    const animeRight = document.querySelector('.anime-right');
+    const animeUp = document.querySelector('.anime-up');
 
     animeLeft.classList.add('anime-start');  
-    animeRight.classList.add('anime-start');
+    animeUp.classList.add('anime-start');
   }, [])
   
   useEffect(() => {
