@@ -32,12 +32,13 @@ export const Provider = ({ children }) => {
 
         if (entry.intersectionRatio > 0) {
           entry.target.classList.add('anime-start');
-        } else {
+        } 
+        else if (entry.boundingClientRect.y > 0) {
           entry.target.classList.remove('anime-start');
         }
       });
     })
-
+    
     animes.forEach(anime => {
       observer.observe(anime);
     });

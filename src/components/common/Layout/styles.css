@@ -40,7 +40,7 @@ textarea:focus {
 /*Animations*/
 .anime-up {
   opacity: 0;
-  transform: translateY(35rem);
+  transform: translateY(40rem);
 }
 
 .anime-left { 
