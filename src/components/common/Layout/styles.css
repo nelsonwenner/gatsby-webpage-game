@@ -38,6 +38,11 @@ textarea:focus {
 }
 
 /*Animations*/
+.anime-up {
+  opacity: 0;
+  transform: translateY(35rem);
+}
+
 .anime-left { 
   opacity: 0;
   transform: translateX(-60rem);
@@ -50,6 +55,7 @@ textarea:focus {
 
 .anime-start {
   opacity: 1;
-  transform: translateX(0px);
+  transform: translateX(0);
+  transform: translateY(0);
   transition: 1s ease-in-out;
 }

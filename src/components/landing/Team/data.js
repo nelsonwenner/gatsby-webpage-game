@@ -2,8 +2,9 @@ import avatar01 from '../../../assets/avatar01.png';
 import avatar02 from '../../../assets/avatar02.jpeg';
 
 export default [
-  {
-    name: 'Nelson Dias',
+  { 
+    anime: 'anime-left',
+    name: 'Nelson Wenner',
     avatar: avatar01,
     role: 'Developer',
     link: 'https://github.com/nelsonwenner',
@@ -16,6 +17,7 @@ export default [
     `
   },
   {
+    anime: 'anime-left',
     name: 'Felipe Gabriel',
     avatar: avatar02,
     role: 'Developer, Design',
