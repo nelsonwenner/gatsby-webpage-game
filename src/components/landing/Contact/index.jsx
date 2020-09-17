@@ -15,8 +15,8 @@ import {
 
 import email from '../../../assets/email.svg';
 import { Container } from 'react-system-grid';
-import { Title } from '../../common/Title';
 import { Column } from '../../common/Column';
+import { Title } from '../../common/Title';
 import { Row } from '../../common/Row';
 
 const Contact = () => {
