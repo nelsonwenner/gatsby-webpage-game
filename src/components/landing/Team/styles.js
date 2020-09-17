@@ -2,25 +2,70 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
-  max-height: 120rem;
+  max-height: 145rem;
   min-height: 80rem;
   background: #181818;
 `
 
 export const CardWrapper = styled.div`
-  width: 100%;
-  padding: 5rem 0;
+  display: grid;
+  gap: 10rem;
+  grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+  margin-top: 3.2rem;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
+  @media screen and (max-width: 999px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 `
 
 export const Card = styled.div`
-  max-width: 50rem;
-  width: 100%;
-  height: 50rem;
-  margin: 1rem 2rem;
-  background-color: blue;
+  padding: 3.2rem;
+  border-radius: 0.4rem;
+  background-color: #f2f2f2;
+  text-align: center;
+`
+
+export const Avatar = styled.img`
+  width: 20rem;
+  height: 20rem;
+  margin-bottom: 1rem;
+  border-radius: 100%;
+`
+
+export const TitleCard = styled.h1`
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #181818;
+`
+
+export const Role = styled.p`
+  font-size: 1.8rem;
+  color: #181818;
+  margin-bottom: 0.8rem;
+`
+
+export const SocialLinks = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 1.6rem;
+`
+
+export const Link = styled.li`
+  display: block;
+  cursor: pointer;
+  padding-bottom: 0.8rem;
+`
+
+export const Icon = styled.img`
+  width: 2rem;
+  height: 2rem;
+`
+
+export const Description = styled.p`
+  color: #181818;
 `
