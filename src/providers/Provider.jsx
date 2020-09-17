@@ -19,23 +19,17 @@ export const Provider = ({ children }) => {
   useEffect(() => {
     const animes = document.querySelectorAll('.anime-section');
 
-    if (window.screen.width <= 635) {
-      animes.forEach(anime => {
-        anime.classList.replace('anime-left', 'anime-start');
-        anime.classList.replace('anime-right', 'anime-start');
-      });
-    }
-  
-    const observer = new IntersectionObserver((entries) => {
+    const observer = new IntersectionObserver((entries, observer) => {
       
       entries.forEach(entry => {
 
-        if (entry.intersectionRatio > 0) {
+        if (entry.isIntersecting) {
           entry.target.classList.add('anime-start');
         } 
-        else if (entry.boundingClientRect.y > 0) {
-          entry.target.classList.remove('anime-start');
-        }
+        else 
+          if (entry.boundingClientRect.y > 0) {
+            entry.target.classList.remove('anime-start');
+          }
       });
     })
     
