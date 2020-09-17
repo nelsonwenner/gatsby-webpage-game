@@ -78,3 +78,22 @@ export const Logo = styled.img`
   display: inline-block;
   vertical-align: middle;
 `;
+
+export const Button = styled.button`
+  max-width: 13rem;
+  width: 100%;
+  border: none;
+  padding: 1rem 1rem;
+  margin-top: 1rem;
+  border-radius: 15px;
+  font-size: 1.4rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #f2f2f2;
+  transition: all .5s ease-in-out;
+  background-color: #FFC149;
+
+  &:hover {
+    background-color: #E89A38;
+  }
+`;

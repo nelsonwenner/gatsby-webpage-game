@@ -9,7 +9,8 @@ import {
   TextArea,
   TextAreaWrapper,
   ImgWrapper,
-  Logo
+  Logo,
+  Button
 } from './styles';
 
 import email from '../../../assets/email.svg';
@@ -40,6 +41,7 @@ const Contact = () => {
                 <Label>Message</Label>
                 <TextArea />
               </TextAreaWrapper>
+              <Button>Send</Button>
             </FormWrapper>
           </Column>
           <Column>
