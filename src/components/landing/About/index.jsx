@@ -20,17 +20,17 @@ const About = () => {
   return (
     <Wrapper id="about">
       <Container>
-        <Title>
+        <Title className='anime-section anime-left'>
           About
         </Title>
         <Row>
           <Column>
-            <ImgWrapper start='true'>
+            <ImgWrapper start='true' className='anime-section anime-up'>
               <Logo src={ logo } alt="logo" />
             </ImgWrapper>
           </Column>
           <Column>
-            <TextWrapper>
+            <TextWrapper className='anime-section anime-up'>
               <Sinopse>
                 Sinopse
                 <Pipe></Pipe>
