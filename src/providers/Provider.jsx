@@ -9,18 +9,13 @@ export const Provider = ({ children }) => {
   const handlerClick = () => setToggleSidebar(!toggleSidebar);
   
   useEffect(() => {
-    const effectLeft = document.querySelector('.effect-entry-left');
-    const effectRight = document.querySelector('.effect-entry-right');
-    
-    effectLeft.style.opacity = '1';
-    effectLeft.style.transform = 'translateX(0px)';
-    effectLeft.style.transition = '1s ease-in-out';
+    const animeLeft = document.querySelector('.anime-left');
+    const animeRight = document.querySelector('.anime-right');
 
-    effectRight.style.opacity = '1';
-    effectRight.style.transform = 'translateX(0px)';
-    effectRight.style.transition = '1s ease-in-out';
+    animeLeft.classList.add('anime-start');  
+    animeRight.classList.add('anime-start');
   }, [])
-
+  
   return (
     <ProviderContext.Provider value={ {toggleSidebar, handlerClick} }>
       { children }

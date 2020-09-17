@@ -21,7 +21,7 @@ const Banner = () => {
       <Container>
         <Row>
           <Column>
-            <TextWrapper className='effect-entry-left'>
+            <TextWrapper className='anime-left'>
               <Heading>
                 Breaking
               </Heading>
@@ -38,7 +38,7 @@ const Banner = () => {
             </TextWrapper>
           </Column>
           <Column>
-            <ImgWrapper start='true' className='effect-entry-right'>
+            <ImgWrapper start='true' className='anime-right'>
               <Logo src={ logo } alt="logo"/>
             </ImgWrapper>
           </Column>
