@@ -10,18 +10,18 @@ import {
   Logo 
 } from './styles';
 
-import logo from '../../../assets/logo-banner.svg';
+import logoPerson from '../../../assets/logo-person.svg';
 import { Container } from 'react-system-grid';
 import { Column } from '../Column';
 import { Row } from '../Row';
 
 const Banner = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Container>
         <Row>
           <Column>
-            <TextWrapper className='effect-entry-left'>
+            <TextWrapper className='anime-left'>
               <Heading>
                 Breaking
               </Heading>
@@ -38,8 +38,8 @@ const Banner = () => {
             </TextWrapper>
           </Column>
           <Column>
-            <ImgWrapper start='true' className='effect-entry-right'>
-              <Logo src={ logo } alt="logo"/>
+            <ImgWrapper start='true' className='anime-up'>
+              <Logo src={ logoPerson } alt="logo"/>
             </ImgWrapper>
           </Column>
         </Row>

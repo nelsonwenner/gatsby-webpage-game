@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
-  height: 100vh;
-  min-height: 80rem;
-  padding: 20rem 0;
+  min-height: 100vh;
+  padding: 15rem 0;
   overflow: hidden;
   background: #181818;
-
+  
   display: flex;
   flex-direction: row;
 `

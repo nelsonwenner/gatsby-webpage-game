@@ -37,13 +37,36 @@ textarea:focus {
   outline: none;
 }
 
-/*Effects*/
-.effect-entry-left { 
+/*Animations*/
+.anime-up {
+  opacity: 0;
+  transform: translateY(40rem);
+}
+
+.anime-left { 
   opacity: 0;
   transform: translateX(-60rem);
 }
 
-.effect-entry-right {
+.anime-right {
   opacity: 0;
   transform: translateX(120rem);
+}
+
+
+.anime-20-up {
+  opacity: 0;
+  transform: translateY(20rem);
+}
+
+.anime-30-left { 
+  opacity: 0;
+  transform: translateX(-30rem);
+}
+
+.anime-start {
+  opacity: 1;
+  transform: translateX(0);
+  transform: translateY(0);
+  transition: 1s ease-in-out;
 }

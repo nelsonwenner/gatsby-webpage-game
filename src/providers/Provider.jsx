@@ -9,18 +9,36 @@ export const Provider = ({ children }) => {
   const handlerClick = () => setToggleSidebar(!toggleSidebar);
   
   useEffect(() => {
-    const effectLeft = document.querySelector('.effect-entry-left');
-    const effectRight = document.querySelector('.effect-entry-right');
-    
-    effectLeft.style.opacity = '1';
-    effectLeft.style.transform = 'translateX(0px)';
-    effectLeft.style.transition = '1s ease-in-out';
+    const animeLeft = document.querySelector('.anime-left');
+    const animeUp = document.querySelector('.anime-up');
 
-    effectRight.style.opacity = '1';
-    effectRight.style.transform = 'translateX(0px)';
-    effectRight.style.transition = '1s ease-in-out';
+    animeLeft.classList.add('anime-start');  
+    animeUp.classList.add('anime-start');
   }, [])
+  
+  useEffect(() => {
+    const animes = document.querySelectorAll('.anime-section');
 
+    const observer = new IntersectionObserver((entries, observer) => {
+      
+      entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+          entry.target.classList.add('anime-start');
+        } 
+        else 
+          if (entry.boundingClientRect.y > 0) {
+            entry.target.classList.remove('anime-start');
+          }
+      });
+    })
+    
+    animes.forEach(anime => {
+      observer.observe(anime);
+    });
+
+  }, [])
+  
   return (
     <ProviderContext.Provider value={ {toggleSidebar, handlerClick} }>
       { children }
