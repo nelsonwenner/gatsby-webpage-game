@@ -25,6 +25,11 @@ Developed game code <a href="https://github.com/nelsonwenner/godot-topdown-shoot
   </a>
 </p>
 
+## :movie_camera: Preview
+<div align="center">
+  <img src="./preview/gatsby-website-game-preview.gif" />
+</div>
+
 ## :rocket: Technologies
 
 * [Node](https://nodejs.org/en/)

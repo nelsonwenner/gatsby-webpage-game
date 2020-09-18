@@ -16,7 +16,7 @@ export const Footer = () => {
     <Wrapper >
       <InfoContainer>
         © 
-        2020 
+        2020-{`${new Date().getFullYear()} `}
         Build 
         with 
         <Social
