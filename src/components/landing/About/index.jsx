@@ -20,7 +20,7 @@ const About = () => {
   return (
     <Wrapper id="about">
       <Container>
-        <Title className='anime-section anime-left'>
+        <Title className='anime-section anime-30-left'>
           About
         </Title>
         <Row>

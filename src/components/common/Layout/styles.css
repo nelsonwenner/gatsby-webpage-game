@@ -53,6 +53,17 @@ textarea:focus {
   transform: translateX(120rem);
 }
 
+
+.anime-20-up {
+  opacity: 0;
+  transform: translateY(20rem);
+}
+
+.anime-30-left { 
+  opacity: 0;
+  transform: translateX(-30rem);
+}
+
 .anime-start {
   opacity: 1;
   transform: translateX(0);

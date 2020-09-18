@@ -20,15 +20,16 @@ import { Title } from '../../common/Title';
 import { Row } from '../../common/Row';
 
 const Contact = () => {
+
   return (
     <Wrapper id="contact">
-      <Container className="anime-section anime-up">
-        <Title>
+      <Container>
+        <Title className="anime-section anime-30-left">
           Contact
         </Title>
         <Row>
           <Column>
-            <FormWrapper>
+            <FormWrapper className="anime-section anime-30-left">
               <InputWrapper>
                 <Label>Full name</Label>
                 <Input />
@@ -45,7 +46,7 @@ const Contact = () => {
             </FormWrapper>
           </Column>
           <Column>
-            <ImgWrapper>
+            <ImgWrapper className="anime-section anime-20-up">
               <Logo src={ email } alt="email" />
             </ImgWrapper>
           </Column>

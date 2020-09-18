@@ -22,11 +22,11 @@ import data from './data';
 const Team = () => {
   return (
     <Wrapper id="team">
-      <Container className="anime-section anime-up">
-        <Title>
+      <Container>
+        <Title className="anime-section anime-30-left">
           Team
         </Title>
-        <CardWrapper>
+        <CardWrapper className="anime-section anime-up">
           {data.map((item, index) => (
             <Card key={ index } >
               <Avatar src={ item.avatar } alt="avatar" />

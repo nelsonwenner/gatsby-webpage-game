@@ -17,7 +17,7 @@ import { Row } from '../Row';
 
 const Banner = () => {
   return (
-    <Wrapper>
+    <Wrapper id="home">
       <Container>
         <Row>
           <Column>
