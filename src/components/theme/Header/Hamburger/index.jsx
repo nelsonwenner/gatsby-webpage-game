@@ -1,14 +1,14 @@
 import React from 'react';
-import './styles.css';
 
 import { useProvider } from '../../../../providers/Provider';
+import { HamburgerWrapper } from './styles';
 
 const Hamburger = () => {
   const { toggleSidebar, handlerClick } = useProvider();
 
   return (
-    <div 
-      className={`hamburger ${ (toggleSidebar && 'motion') }`}
+    <HamburgerWrapper 
+      className={`${ (toggleSidebar && 'motion') }`}
       onClick={ handlerClick }
     /> 
   )
