@@ -10,12 +10,12 @@ export const Wrapper = styled.div`
   height: 8rem;
   background: #181818;
   transition: all 0.3s ease;
-
+  
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  
+
   &.sticky {
     height: 7rem;
     background: rgb(16, 16, 16);
