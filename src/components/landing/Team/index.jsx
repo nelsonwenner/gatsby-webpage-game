@@ -11,7 +11,7 @@ import {
   SocialLinks,
   Link,
   Icon,
-  Description 
+  Description
 } from './styles';
 
 import github from '../../../assets/github.svg';
@@ -38,7 +38,13 @@ const Team = () => {
               </Role>
               <SocialLinks>
                 <Link>
-                  <Icon src={ github } />
+                  <a 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    href={ item.link } 
+                  >
+                    <Icon src={ github } />
+                  </a>
                 </Link>
               </SocialLinks>
               <Description>

@@ -3,7 +3,7 @@ import './fonts.css';
 import './styles.css';
 
 import { Provider } from '../../../providers/Provider';
-import { Header } from '../../theme';
+import { Header, Footer } from '../../theme';
 import { Wrapper } from './styles';
 import Banner from '../Banner';
 
@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
       <Wrapper>
         { children }
       </Wrapper>
+      <Footer />
     </Provider>
   )
 }
