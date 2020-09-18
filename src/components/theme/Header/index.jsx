@@ -1,11 +1,7 @@
-import React,{ useEffect } from 'react'
-import './styles.css';
+import React,{ useEffect } from 'react';
 
+import { Wrapper } from './styles';
 import Navbar from './Navbar';
-
-const Wrapper = ({ children }) => (
-  <div className="header">{ children }</div>
-)
 
 export const Header = () => {
   
@@ -16,9 +12,9 @@ export const Header = () => {
       header.classList.toggle('sticky', windowPosition);
     })
   }, [])
-
+  
   return (
-    <Wrapper>
+    <Wrapper className="header">
       <Navbar />
     </Wrapper>
   )
