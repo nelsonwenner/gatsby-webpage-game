@@ -21,42 +21,24 @@ export const TextWrapper = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 9rem;
+  font-size: min(10.5rem, 12vw);
   line-height: 1.1;
   font-weight: 600;
   margin-bottom: 0.5rem;
   color: #F2F2F2;
-
-  @media screen and (max-width: 768px) {
-    font-size: 6.4rem;
-  }
-
-  @media screen and (max-width: 375px) {
-    font-size: 5rem;
-  }
 `;
 
 export const Subtitle = styled.h1`
-  font-size: 6rem;
+  font-size: min(6rem, 9vw);
   line-height: 1.1;
   font-weight: 600;
   color: #F2F2F2;
-
-  @media screen and (max-width: 768px) {
-    font-size: 4.6rem;
-  }
-
-  @media screen and (max-width: 375px) {
-    font-size: 3rem;
-  }
 `;
 
 export const Description = styled.p`
-  max-width: 50rem;
-  width: 100%;
+  font-size: min(2rem, 4vw);
   margin-top: 0.8rem;
   margin-bottom: 3.5rem;
-  font-size: 1.6rem;
   line-height: 2rem;
   color: #F2F2F2;
 `;
