@@ -38,30 +38,19 @@ textarea:focus {
 }
 
 /*Animations*/
-.anime-up {
+.anime-up-15 {
   opacity: 0;
-  transform: translateY(40rem);
+  transform: translateY(15vh);
 }
 
-.anime-left { 
+.anime-left-15 { 
   opacity: 0;
-  transform: translateX(-60rem);
+  transform: translateX(-15vw);
 }
 
-.anime-right {
+.anime-right-15 {
   opacity: 0;
-  transform: translateX(120rem);
-}
-
-
-.anime-20-up {
-  opacity: 0;
-  transform: translateY(20rem);
-}
-
-.anime-30-left { 
-  opacity: 0;
-  transform: translateX(-30rem);
+  transform: translateX(15vw);
 }
 
 .anime-start {
