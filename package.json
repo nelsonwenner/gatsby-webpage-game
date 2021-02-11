@@ -7,14 +7,18 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "lint:check": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "style:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "style:fix": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
+    "reset": "rm -rf cache/ public/",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.54",
+    "gatsby": "^2.32.3",
     "gatsby-plugin-canonical-urls": "^2.0.8",
     "gatsby-plugin-favicon": "^3.1.6",
     "gatsby-plugin-manifest": "2.2.6",
@@ -31,6 +35,13 @@
     "styled-components": "^5.2.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.19.0",
+    "eslint-config-react-app": "^6.0.0",
+    "eslint-plugin-flowtype": "^5.2.0",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "prettier": "2.1.1"
   },
   "repository": {
