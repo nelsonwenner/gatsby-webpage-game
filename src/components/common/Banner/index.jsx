@@ -21,7 +21,7 @@ const Banner = () => {
       <Container>
         <Row>
           <Column>
-            <TextWrapper className="anime-left-15">
+            <TextWrapper className="anime-section anime-left-15">
               <Heading>Breaking</Heading>
               <Subtitle>Artificial Society</Subtitle>
               <Description>
@@ -33,7 +33,7 @@ const Banner = () => {
             </TextWrapper>
           </Column>
           <Column>
-            <ImgWrapper start="true" className="anime-up-15">
+            <ImgWrapper start="true" className="anime-section anime-up-15">
               <Logo src={logoPerson} alt="logo" />
             </ImgWrapper>
           </Column>

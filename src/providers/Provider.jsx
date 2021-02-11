@@ -9,14 +9,6 @@ export const Provider = ({ children }) => {
   const handlerClick = () => setToggleSidebar(!toggleSidebar)
 
   useEffect(() => {
-    const animeLeft = document.querySelector('.anime-left-15')
-    const animeUp = document.querySelector('.anime-up-15')
-
-    animeLeft.classList.add('anime-start')
-    animeUp.classList.add('anime-start')
-  }, [])
-
-  useEffect(() => {
     const animes = document.querySelectorAll('.anime-section')
 
     const observer = new IntersectionObserver((entries, observer) => {
