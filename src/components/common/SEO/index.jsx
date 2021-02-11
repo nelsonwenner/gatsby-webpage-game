@@ -1,6 +1,6 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import Thumbnail from '../../../assets/logo-banner.svg';
+import React from 'react'
+import { Helmet } from 'react-helmet'
+import Thumbnail from '../../../assets/logo-banner.svg'
 
 import {
   url,
@@ -13,13 +13,13 @@ import {
   legalName,
   foundingDate,
   logo,
-} from '../../../data/config';
+} from '../../../data/config'
 
-export const SEO = ({ 
-  title=defaultTitle, 
-  description=defaultDescription, 
-  location='' }) => {
-
+export const SEO = ({
+  title = defaultTitle,
+  description = defaultDescription,
+  location = '',
+}) => {
   const structuredDataOrganization = `{ 
 		"@context": "http://schema.org",
 		"@type": "Organization",
@@ -52,14 +52,17 @@ export const SEO = ({
 			"${socialLinks.instagram}",
 			"${socialLinks.github}"
 		]
-  }`;
+  }`
 
   return (
     <Helmet>
       <meta name="description" content={description} />
       <meta name="image" content={Thumbnail} />
 
-      <meta property="og:url" content={`${url}${location}/?ref=artificialsociety.tk`} />
+      <meta
+        property="og:url"
+        content={`${url}${location}/?ref=artificialsociety.tk`}
+      />
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />

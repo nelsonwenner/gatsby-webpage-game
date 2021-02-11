@@ -1,8 +1,8 @@
-import avatar01 from '../../../assets/avatar01.png';
-import avatar02 from '../../../assets/avatar02.jpeg';
+import avatar01 from '../../../assets/avatar01.png'
+import avatar02 from '../../../assets/avatar02.jpeg'
 
 export default [
-  { 
+  {
     anime: 'anime-left',
     name: 'Nelson Wenner',
     avatar: avatar01,
@@ -14,7 +14,7 @@ export default [
       development in general, both for backend, frontend, mobile and games, 
       I am very anxious, curious and imperative person, always my free time
       I like to study new technologies and develop games.
-    `
+    `,
   },
   {
     anime: 'anime-left',
@@ -29,6 +29,6 @@ export default [
       interested in going deeper into backend and mobile. In addition, I am very
       attracted to visual arts, mainly in the field of digital arts. I always
       like to keep moving and expand my knowledge.
-    `
-  }
+    `,
+  },
 ]

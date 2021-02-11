@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Column = styled.div`
   flex: 1;
@@ -14,4 +14,4 @@ export const Column = styled.div`
     display: flex;
     justify-content: center;
   }
-`;
+`

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Container } from 'react-system-grid';
-import { SEO } from '../../SEO';
+import { Container } from 'react-system-grid'
+import { SEO } from '../../SEO'
 
 export default () => (
   <Container>
@@ -11,5 +11,4 @@ export default () => (
     <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
     <Link to="/">Go Back Home</Link>
   </Container>
- 
 )

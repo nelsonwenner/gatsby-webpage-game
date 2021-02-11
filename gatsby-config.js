@@ -1,4 +1,4 @@
-const config = require('./src/data/config');
+const config = require('./src/data/config')
 
 module.exports = {
   siteMetadata: {
@@ -15,8 +15,8 @@ module.exports = {
         name: config.defaultTitle,
         short_name: 'starter',
         start_url: '/',
-        background_color: "#fff",
-        theme_color: "#fff",
+        background_color: '#fff',
+        theme_color: '#fff',
         display: 'minimal-ui',
         icon: './static/logo.svg',
       },
