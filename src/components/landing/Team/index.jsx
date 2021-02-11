@@ -23,10 +23,10 @@ const Team = () => {
   return (
     <Wrapper id="team">
       <Container>
-        <Title className="anime-section anime-30-left">
+        <Title className='anime-section anime-left-15'>
           Team
         </Title>
-        <CardWrapper className="anime-section anime-up">
+        <CardWrapper className="anime-section anime-up-15">
           {data.map((item, index) => (
             <Card key={ index } >
               <Avatar src={ item.avatar } alt="avatar" />

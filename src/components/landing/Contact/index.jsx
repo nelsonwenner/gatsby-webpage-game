@@ -24,12 +24,12 @@ const Contact = () => {
   return (
     <Wrapper id="contact">
       <Container>
-        <Title className="anime-section anime-30-left">
+        <Title className='anime-section anime-left-15'>
           Contact
         </Title>
         <Row>
           <Column>
-            <FormWrapper className="anime-section anime-30-left">
+            <FormWrapper className="anime-section anime-up-15">
               <InputWrapper>
                 <Label>Full name</Label>
                 <Input />
@@ -46,7 +46,7 @@ const Contact = () => {
             </FormWrapper>
           </Column>
           <Column>
-            <ImgWrapper className="anime-section anime-20-up">
+            <ImgWrapper className="anime-section anime-right-15">
               <Logo src={ email } alt="email" />
             </ImgWrapper>
           </Column>

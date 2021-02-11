@@ -9,8 +9,8 @@ export const Provider = ({ children }) => {
   const handlerClick = () => setToggleSidebar(!toggleSidebar);
   
   useEffect(() => {
-    const animeLeft = document.querySelector('.anime-left');
-    const animeUp = document.querySelector('.anime-up');
+    const animeLeft = document.querySelector('.anime-left-15');
+    const animeUp = document.querySelector('.anime-up-15');
 
     animeLeft.classList.add('anime-start');  
     animeUp.classList.add('anime-start');
