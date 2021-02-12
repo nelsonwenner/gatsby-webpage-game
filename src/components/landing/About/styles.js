@@ -10,26 +10,22 @@ export const Wrapper = styled.div`
 `
 
 export const ImgWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   height: 100%;
   padding-top: 14rem;
   display: flex;
   flex-direction: row;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 
-  @media screen and (max-width: 768px) {
-    width: 60%;
-  }
-
-  @media screen and (max-width: 375px) {
-    width: 90%;
+  @media screen and (max-width: 960px) {
+    width: 70%;
   }
 `
 
 export const Logo = styled.img`
+  max-width: 100%;
   width: 100%;
-  display: inline-block;
-  vertical-align: middle;
+  height: auto;
 `
 
 export const TextWrapper = styled.div`
