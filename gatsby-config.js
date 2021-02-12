@@ -1,8 +1,4 @@
-const config = require('./src/data/config')
-
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-})
+const config = require('./src/data/config');
 
 module.exports = {
   siteMetadata: {
@@ -14,22 +10,13 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-react-helmet',
     {
-      resolve: 'gatsby-source-filesystem',
-      options: {
-        name: 'images',
-        path: `${__dirname}/src/assets/`,
-      },
-    },
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
-    {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: config.defaultTitle,
         short_name: 'starter',
         start_url: '/',
-        background_color: '#fff',
-        theme_color: '#fff',
+        background_color: "#fff",
+        theme_color: "#fff",
         display: 'minimal-ui',
         icon: './static/logo.svg',
       },

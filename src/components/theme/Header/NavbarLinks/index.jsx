@@ -1,27 +1,35 @@
-import React from 'react'
+import React from 'react';
 
-import { useProvider } from '../../../../providers/Provider'
-import { NavMenu, NavItem, NavLinks } from './styles'
+import { useProvider } from '../../../../providers/Provider';
+import { NavMenu, NavItem, NavLinks } from './styles';
 
 const NavbarLinks = () => {
-  const { toggleSidebar } = useProvider()
-
-  return (
-    <NavMenu click={toggleSidebar}>
+  const {toggleSidebar} = useProvider();
+  
+  return (  
+    <NavMenu click={ toggleSidebar }>
       <NavItem>
-        <NavLinks href="#home">Home</NavLinks>
+        <NavLinks href="#home">
+          Home
+        </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks href="#about">About</NavLinks>
+        <NavLinks href="#about">
+          About
+        </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks href="#team">Team</NavLinks>
+        <NavLinks href="#team">
+          Team
+        </NavLinks>
       </NavItem>
       <NavItem>
-        <NavLinks href="#contact">Contact</NavLinks>
+        <NavLinks href="#contact">
+          Contact
+        </NavLinks>
       </NavItem>
     </NavMenu>
   )
 }
 
-export default NavbarLinks
+export default NavbarLinks;

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HamburgerWrapper = styled.div`
   position: relative;
@@ -7,7 +7,7 @@ export const HamburgerWrapper = styled.div`
   width: 5.4rem;
   height: 5rem;
   border-radius: 10%;
-
+  
   display: none;
 
   &::before {
@@ -20,8 +20,8 @@ export const HamburgerWrapper = styled.div`
     border-radius: 20px;
     background-color: #fff;
     transition: 1s ease;
-  }
-
+  } 
+  
   &::after {
     content: '';
     position: absolute;
@@ -50,7 +50,7 @@ export const HamburgerWrapper = styled.div`
     left: 15%;
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width:960px) { 
     display: block;
-  }
+ }
 `

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   position: fixed;
@@ -10,7 +10,7 @@ export const Wrapper = styled.div`
   height: 8rem;
   background: #181818;
   transition: all 0.3s ease;
-
+  
   display: flex;
   flex-direction: row;
   justify-content: center;

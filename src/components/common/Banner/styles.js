@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -6,7 +6,7 @@ export const Wrapper = styled.div`
   padding: 15rem 0;
   overflow: hidden;
   background: #181818;
-
+  
   display: flex;
   flex-direction: row;
 `
@@ -15,38 +15,33 @@ export const TextWrapper = styled.div`
   max-width: 54rem;
   width: 100%;
 
-  @media screen and (max-width: 960px) {
+  @media screen and (max-width: 768px) {
     text-align: center;
   }
-`
+`;
 
 export const Heading = styled.h1`
-  /* clamp (minimum, desirable, maximum) */
-  font-size: clamp(5rem, 1rem + 15vw, 10rem);
+  font-size: min(10.5rem, 12vw);
   line-height: 1.1;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  background: linear-gradient(285.44deg, #f2b43d 8.3%, #4474e4 86.39%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`
+  color: #F2F2F2;
+`;
 
 export const Subtitle = styled.h1`
-  font-size: clamp(3rem, 1rem + 9vw, 6rem);
+  font-size: min(6rem, 9vw);
   line-height: 1.1;
   font-weight: 600;
-  background: linear-gradient(285.44deg, #f2b43d 8.3%, #4474e4 86.39%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-`
+  color: #F2F2F2;
+`;
 
 export const Description = styled.p`
-  font-size: clamp(1rem, 1rem + 9vw, 2rem);
+  font-size: min(2rem, 4vw);
   margin-top: 0.8rem;
   margin-bottom: 3.5rem;
   line-height: 2rem;
-  color: #c5c5c5;
-`
+  color: #F2F2F2;
+`;
 
 export const ImgWrapper = styled.div`
   width: 100%;
@@ -55,12 +50,17 @@ export const ImgWrapper = styled.div`
   flex-direction: row;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 
-  @media screen and (max-width: 960px) {
-    width: 70%;
+  @media screen and (max-width: 768px) {
+    width: 60%;
   }
-`
+
+  @media screen and (max-width: 375px) {
+    width: 90%;
+  }
+`;
 
 export const Logo = styled.img`
-  max-width: 100%;
-  height: auto;
-`
+  width: 100%;
+  display: inline-block;
+  vertical-align: middle;
+`;

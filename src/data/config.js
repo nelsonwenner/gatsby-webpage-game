@@ -30,4 +30,4 @@ module.exports = {
   },
   foundingDate: '2020',
   recaptcha_key: '',
-}
+};

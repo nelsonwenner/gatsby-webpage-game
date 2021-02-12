@@ -1,13 +1,13 @@
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-import styled from 'styled-components'
+import AnchorLink from 'react-anchor-link-smooth-scroll';
+import styled from 'styled-components';
 
 export const NavMenu = styled.ul`
   display: flex;
   flex-direction: row;
   align-items: center;
   text-align: center;
-
-  @media only screen and (max-width: 960px) {
+  
+  @media only screen and (max-width:960px) { 
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -26,15 +26,15 @@ export const NavItem = styled.li`
   border-bottom: 2px solid transparent;
 
   &:hover {
-    border-bottom: 2px solid #ffc149;
+    border-bottom: 2px solid #FFC149;
   }
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width:960px) { 
     width: 100%;
 
     &:hover {
       border: none;
-    }
+    } 
   }
 `
 
@@ -47,7 +47,7 @@ export const NavLinks = styled(AnchorLink)`
   color: #f2f2f2;
   font-size: 1.8rem;
 
-  @media only screen and (max-width: 960px) {
+  @media only screen and (max-width:960px) { 
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -55,8 +55,9 @@ export const NavLinks = styled(AnchorLink)`
     padding: 2rem;
 
     &:hover {
-      color: #ffc149;
+      color: #FFC149;
       transition: all 0.3s ease;
     }
   }
 `
+

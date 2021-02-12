@@ -38,24 +38,30 @@ textarea:focus {
 }
 
 /*Animations*/
-.anime-up-15 {
+.anime-up {
   opacity: 0;
-  transform: translateY(15vh);
+  transform: translateY(40rem);
 }
 
-.anime-down-5 {
+.anime-left { 
   opacity: 0;
-  transform: translateY(-5vh);
+  transform: translateX(-60rem);
 }
 
-.anime-left-15 { 
+.anime-right {
   opacity: 0;
-  transform: translateX(-15vw);
+  transform: translateX(120rem);
 }
 
-.anime-right-15 {
+
+.anime-20-up {
   opacity: 0;
-  transform: translateX(15vw);
+  transform: translateY(20rem);
+}
+
+.anime-30-left { 
+  opacity: 0;
+  transform: translateX(-30rem);
 }
 
 .anime-start {
@@ -63,15 +69,4 @@ textarea:focus {
   transform: translateX(0);
   transform: translateY(0);
   transition: 1s ease-in-out;
-  animation: bg 4s ease-out;
-}
-
-@keyframes bg {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 100%;
-  }
 }

@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -13,11 +13,11 @@ export const Wrapper = styled.div`
   text-align: center;
 `
 export const InfoContainer = styled.div`
-  margin-bottom: 1rem;
+ margin-bottom: 1rem;
 `
 
 export const Social = styled.a`
-  position: relative;
+  position:relative;
   top: 0.3rem;
   margin: 0 0.6rem;
 `

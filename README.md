@@ -26,18 +26,17 @@ Developed game code <a href="https://github.com/nelsonwenner/godot-topdown-shoot
 </p>
 
 ## :movie_camera: Preview
-
 <div align="center">
   <img src="./preview/gatsby-website-game-preview.gif" />
 </div>
 
 ## :rocket: Technologies
 
-- [Node](https://nodejs.org/en/)
-- [Gatsby](https://www.gatsbyjs.com/)
+* [Node](https://nodejs.org/en/)
+* [Gatsby](https://www.gatsbyjs.com/)
 
 ## :electric_plug: Prerequisites
-
+  
 - [Node.js LTS (>= 12.x)](https://nodejs.org/)
 - [Gatsby CLI (>= 2.12.x)](https://www.gatsbyjs.com/)
 
@@ -55,11 +54,9 @@ $ npm install
 /* Run the project */
 $ npm run start
 ```
-
-- Open frontend, the host [localhost:8000](http://localhost:8000)
+  * Open frontend, the host [localhost:8000](http://localhost:8000) 
 
 ## :memo: License
-
 This project is under the MIT license. See the [LICENSE](LICENSE.md) for more information.
 
 ---
