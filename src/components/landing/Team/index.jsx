@@ -1,4 +1,5 @@
 import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 import './styles'
 
 import {
@@ -14,20 +15,43 @@ import {
   Description,
 } from './styles'
 
-import github from '../../../assets/github.svg'
+import github from '../../../assets/images/github.svg'
 import { Container } from 'react-system-grid'
 import { Title } from '../../common/Title'
 import data from './data'
 
 const Team = () => {
+  const { avatar1, avatar2 } = useStaticQuery(graphql`
+    query {
+      avatar1: file(relativePath: { eq: "images/avatar01.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000, quality: 100) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+      avatar2: file(relativePath: { eq: "images/avatar02.jpeg" }) {
+        childImageSharp {
+          fluid(maxWidth: 2000) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Wrapper id="team">
       <Container>
         <Title className="anime-section anime-left-15">Team</Title>
         <CardWrapper className="anime-section anime-up-15">
-          {data.map((item, index) => (
+          {data(avatar1, avatar2).map((item, index) => (
             <Card key={index}>
-              <Avatar src={item.avatar} alt="avatar" />
+              <Avatar
+                fluid={item.avatar.childImageSharp.fluid}
+                fadeIn
+                alt="avatar"
+              />
               <TitleCard>{item.name}</TitleCard>
               <Role>{item.role}</Role>
               <SocialLinks>
