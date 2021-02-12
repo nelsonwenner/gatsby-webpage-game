@@ -12,8 +12,8 @@ export const Wrapper = styled.div`
 export const ImgWrapper = styled.div`
   width: 100%;
   height: 100%;
-  padding-top: 14rem;
   display: flex;
+  padding-top: 5rem;
   flex-direction: row;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 
@@ -31,6 +31,7 @@ export const Logo = styled.img`
 export const TextWrapper = styled.div`
   max-width: 54rem;
   width: 100%;
+  padding-top: 5rem;
 
   @media screen and (max-width: 768px) {
     text-align: start;

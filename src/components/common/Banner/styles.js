@@ -18,6 +18,10 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 960px) {
     text-align: center;
   }
+
+  @media screen and (max-width: 360px) {
+    margin-top: 3rem;
+  }
 `
 
 export const Heading = styled.h1`
@@ -57,6 +61,10 @@ export const ImgWrapper = styled.div`
 
   @media screen and (max-width: 960px) {
     width: 70%;
+  }
+
+  @media screen and (max-width: 360px) {
+    display: none;
   }
 `
 
