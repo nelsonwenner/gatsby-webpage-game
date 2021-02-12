@@ -1,7 +1,7 @@
-import React from 'react';
+import React from 'react'
 
-import NotFound from '../components/common/404/NotFound';
-import Layout from '../components/common/Layout';
+import NotFound from '../components/common/404/NotFound'
+import Layout from '../components/common/Layout'
 
 export default () => (
   <Layout>

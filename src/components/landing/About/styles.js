@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -10,27 +10,23 @@ export const Wrapper = styled.div`
 `
 
 export const ImgWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   height: 100%;
   padding-top: 14rem;
   display: flex;
   flex-direction: row;
   justify-content: ${({ start }) => (start ? 'flex-start' : 'flex-end')};
 
-  @media screen and (max-width: 768px) {
-    width: 60%;
+  @media screen and (max-width: 960px) {
+    width: 70%;
   }
-
-  @media screen and (max-width: 375px) {
-    width: 90%;
-  }
-`;
+`
 
 export const Logo = styled.img`
+  max-width: 100%;
   width: 100%;
-  display: inline-block;
-  vertical-align: middle;
-`;
+  height: auto;
+`
 
 export const TextWrapper = styled.div`
   max-width: 54rem;
@@ -39,7 +35,7 @@ export const TextWrapper = styled.div`
   @media screen and (max-width: 768px) {
     text-align: start;
   }
-`;
+`
 
 export const Sinopse = styled.div`
   position: relative;
@@ -47,30 +43,30 @@ export const Sinopse = styled.div`
   line-height: 1.1;
   font-weight: 600;
   margin-bottom: 0.5rem;
-  color: #F2F2F2;
-`;
+  color: #f2f2f2;
+`
 
 export const Pipe = styled.div`
   position: relative;
   width: 10%;
   padding: 0.2rem;
   margin-top: 0.5rem;
-  background-color: #FFC149;
+  background-color: #ffc149;
 
   &:before {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     width: 45%;
     padding: 0.2rem;
     margin-top: 0.6rem;
-    background-color: #FFC149;
+    background-color: #ffc149;
   }
-`;
+`
 
 export const Text = styled.p`
   font-size: 1.8rem;
   line-height: 1;
   margin-top: 2.6rem;
-  color: #F2F2F2;
-`;
+  color: #f2f2f2;
+`

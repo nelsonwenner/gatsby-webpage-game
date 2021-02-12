@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -28,11 +28,11 @@ export const InputWrapper = styled.div`
 export const Input = styled.input`
   position: relative;
   width: 100%;
-  padding: .9rem 1rem .9rem 1rem;
+  padding: 0.9rem 1rem 0.9rem 1rem;
   border: none;
   box-sizing: border-box;
   border-radius: 2px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   background: #f2f2f2;
 
   &:focus {
@@ -51,9 +51,9 @@ export const TextAreaWrapper = styled.div`
 export const TextArea = styled.textarea`
   width: 100%;
   height: 35rem;
-  padding: .9rem 1rem .9rem 1rem;
+  padding: 0.9rem 1rem 0.9rem 1rem;
   border-radius: 3px;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
   background: #f2f2f2;
 `
 
@@ -71,13 +71,13 @@ export const ImgWrapper = styled.div`
   @media screen and (max-width: 375px) {
     width: 90%;
   }
-`;
+`
 
 export const Logo = styled.img`
   width: 100%;
   display: inline-block;
   vertical-align: middle;
-`;
+`
 
 export const Button = styled.button`
   max-width: 13rem;
@@ -90,10 +90,10 @@ export const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   color: #f2f2f2;
-  transition: all .5s ease-in-out;
-  background-color: #FFC149;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffc149;
 
   &:hover {
-    background-color: #E89A38;
+    background-color: #e89a38;
   }
-`;
+`

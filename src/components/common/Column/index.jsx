@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
 
 export const Column = styled.div`
   flex: 1;
@@ -8,10 +8,10 @@ export const Column = styled.div`
   padding-right: 15px;
   padding-left: 15px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 960px) {
     max-width: 100%;
     flex-basis: 100%;
     display: flex;
     justify-content: center;
   }
-`;
+`

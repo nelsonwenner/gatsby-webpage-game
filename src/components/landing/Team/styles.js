@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 export const Wrapper = styled.div`
   width: 100%;
@@ -31,10 +32,12 @@ export const Card = styled.div`
   text-align: center;
 `
 
-export const Avatar = styled.img`
+export const Avatar = styled(Img)`
+  position: absolute;
   width: 20rem;
   height: 20rem;
-  margin-bottom: 1rem;
+  bottom: 1rem;
+  margin: 0 auto;
   border-radius: 100%;
 `
 
