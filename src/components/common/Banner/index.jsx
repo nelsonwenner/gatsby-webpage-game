@@ -21,8 +21,8 @@ const Banner = () => {
       <Container>
         <Row>
           <Column>
-            <TextWrapper className="anime-section anime-left-15">
-              <Heading>Breaking</Heading>
+            <TextWrapper className="anime-section anime-left-15 anime-color">
+              <Heading >Breaking</Heading>
               <Subtitle>Artificial Society</Subtitle>
               <Description>
                 The human being was destroyed himself with his desire for

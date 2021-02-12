@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <Nav as={Container} className="anime-section anime-down-5">
       <Brand as={Link} to="/">
-        <Logo src={logo} alt="logo" />
+        <Logo className="anime-color" src={logo} alt="logo" />
       </Brand>
       <NavbarLinks />
       <Hamburger />
