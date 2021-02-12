@@ -10,7 +10,7 @@ import {
   Text,
 } from './styles'
 
-import logo from '../../../assets/logo-banner.svg'
+import logo from '../../../assets/images/logo.svg'
 import { Container } from 'react-system-grid'
 import { Column } from '../../common/Column'
 import { Title } from '../../common/Title'

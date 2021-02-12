@@ -10,7 +10,7 @@ import {
   Logo,
 } from './styles'
 
-import logoPerson from '../../../assets/logo-person.svg'
+import logoPerson from '../../../assets/images/logo-person.svg'
 import { Container } from 'react-system-grid'
 import { Column } from '../Column'
 import { Row } from '../Row'

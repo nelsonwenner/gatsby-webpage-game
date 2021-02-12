@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import { Nav, Brand, Logo } from './styles'
-import logo from '../../../../assets/logo.svg'
+import logo from '../../../../assets/images/logo.svg'
 import { Container } from 'react-system-grid'
 import NavbarLinks from '../NavbarLinks'
 import Hamburger from '../Hamburger'

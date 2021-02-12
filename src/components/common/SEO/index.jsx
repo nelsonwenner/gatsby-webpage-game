@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Thumbnail from '../../../assets/logo-banner.svg'
+import Thumbnail from '../../../assets/images/logo-banner.svg'
 
 import {
   url,
