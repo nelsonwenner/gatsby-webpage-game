@@ -43,6 +43,11 @@ textarea:focus {
   transform: translateY(15vh);
 }
 
+.anime-down-5 {
+  opacity: 0;
+  transform: translateY(-5vh);
+}
+
 .anime-left-15 { 
   opacity: 0;
   transform: translateX(-15vw);
@@ -58,4 +63,15 @@ textarea:focus {
   transform: translateX(0);
   transform: translateY(0);
   transition: 1s ease-in-out;
+  animation: bg 4s ease-out;
+}
+
+@keyframes bg {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 100%;
+  }
 }
