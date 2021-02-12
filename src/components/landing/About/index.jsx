@@ -24,7 +24,7 @@ const About = () => {
         <Row>
           <Column>
             <ImgWrapper start="true" className="anime-section anime-up-15">
-              <Logo src={logo} alt="logo" />
+              <Logo className="anime-color" src={logo} alt="logo" />
             </ImgWrapper>
           </Column>
           <Column>
